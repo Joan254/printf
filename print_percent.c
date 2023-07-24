@@ -4,7 +4,7 @@
  * @args:not used
  * Return: int
  */
-int print_percent(_attribute_((unused))va_list *args)
+int print_percent(__attribute__((unused))va_list args)
 {
 	_putchar('%');
 	return (1);
