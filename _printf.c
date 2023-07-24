@@ -16,14 +16,14 @@ int _printf(const char *format, ...)
 		{"c", print_char},
 		{"s", print_string},
 		{"%", print_percent},
-		{"i", print_int},
+		/*{"i", print_int},
 		{"d", print_int},
 		{"b", print_binary},
 		{"u", print_uint},
 		{"o", print_octal},
 		{"x", print_hexlower},
 		{"X", print_hexupper},
-		{NULL, NULL}
+		{NULL, NULL}*/
 	};
 
 	va_list args;
