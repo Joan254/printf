@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_percent - print percent_sign
+ * print_percent - prints percent sign
  * @args:not used
  * Return: int
  */
