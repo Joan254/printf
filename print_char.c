@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_char - prints a character
  * @args: arguments
@@ -6,7 +7,7 @@
  * Return:int
  */
 
- int print_char(va_list args)
+int print_char(va_list args)
 {
 	char c;
 
