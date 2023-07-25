@@ -15,7 +15,7 @@
 struct functions
 {
 	char *fn;
-	int(*f)(va_list);
+	int (*f)(va_list);
 };
 
 typedef struct functions functions_t;
