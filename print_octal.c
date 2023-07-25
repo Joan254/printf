@@ -13,13 +13,13 @@ int count = 0, octal[32];
 
 unsigned int number = va_arg(args, unsigned int);
 
-int i = 0, j, e_nonzerobit = 0
+int i = 0, j, e_nonzerobit = 0;
 
 while (i < 32)
 {
 	octal[i] = number & 7;
 	number >>= 3;
-	i++
+	i++;
 }
 
 for (j = 31; j >= 0; j--)
