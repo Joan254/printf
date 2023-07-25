@@ -19,8 +19,8 @@ int _printf(const char *format, ...)
 		{"i", print_int},
 		{"d", print_int},
 		{"b", print_binary},
-		/*{"u", print_uint},*/
-		/*{"o", print_octal},*/
+		{"u", print_uint},
+		{"o", print_octal},
 		{"x", print_hexlower},
 		{"X", print_hexupper},
 		{NULL, NULL}
