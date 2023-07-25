@@ -15,26 +15,24 @@ unsigned int number = va_arg(args, unsigned int);
 
 int i = 0, j, e_nonzerobit = 0;
 
-while (i < 32);
-
+while (i < 32)
 {
 	   binary[i] = number & 1;
 	   number >>= 1;
 	   i++;
 }
-
-for (j = 31; j >= 0; j--);
+for (j = 31; j >= 0; j--)
 
 
 {
-	if (binary[j] || e_nonzerobit);
+	if (binary[j] || e_nonzerobit)
 	{
 	e_nonzerobit = 1;
 	_putchar(binary[j] + '0');
 	count++;
 	}
 }
-if (count == 0);
+if (count == 0)
 {
 	_putchar('0');
 	count++;
