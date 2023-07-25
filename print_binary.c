@@ -11,11 +11,11 @@ int print_binary(va_list args)
 {
 unsigned int count = 0, binary[32];
 
-unsigned int number = va _ arg(args, unsigned int);
+unsigned int number = va_arg(args, unsigned int);
 
-int i =0, j, e _ nonzerobit = 0;
+int i = 0, j, e_nonzerobit = 0;
 
-     while (i < 32);
+while (i < 32);
 {
 	   binary[i] = number & 1;
 	   number >>= 1;
