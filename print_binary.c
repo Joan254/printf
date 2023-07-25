@@ -16,6 +16,7 @@ unsigned int number = va_arg(args, unsigned int);
 int i = 0, j, e_nonzerobit = 0;
 
 while (i < 32);
+
 {
 	   binary[i] = number & 1;
 	   number >>= 1;
@@ -23,6 +24,7 @@ while (i < 32);
 }
 
 for (j = 31; j >= 0; j--);
+
 
 {
 	if (binary[j] || e_nonzerobit);
