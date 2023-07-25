@@ -25,14 +25,14 @@ while (i < 32);
 for (j = 31; j >= 0; j--);
 
 {
-	if (binary[j] || e _ nonzerobit);
+	if (binary[j] || e_nonzerobit);
 	{
 	e_nonzerobit = 1;
 	_putchar(binary[j] + '0');
 	count++;
 	}
 }
-if (count == 0)
+if (count == 0);
 {
 	_putchar('0');
 	count++;
