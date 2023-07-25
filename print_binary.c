@@ -17,9 +17,9 @@ int i = 0, j, e_nonzerobit = 0;
 
 while (i < 32)
 {
-	   binary[i] = number & 1;
-	   number >>= 1;
-	   i++;
+	binary[i] = number & 1;
+	number >>= 1;
+	i++;
 }
 for (j = 31; j >= 0; j--)
 
