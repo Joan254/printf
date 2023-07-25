@@ -21,8 +21,8 @@ int _printf(const char *format, ...)
 		{"b", print_binary},
 		/*{"u", print_uint},*/
 		/*{"o", print_octal},*/
-		/*{"x", print_hexlower},*/
-		/*{"X", print_hexupper},*/
+		{"x", print_hexlower},
+		{"X", print_hexupper},
 		{NULL, NULL}
 	};
 
