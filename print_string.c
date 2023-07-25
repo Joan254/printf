@@ -15,7 +15,7 @@ int print_string(va_list args)
 
 	str = va_arg(args, const char *);
 	if (str == NULL)
-		str = "(nil)";
+		str = "(null)";
 	while (str[i] != '\0')
 	{
 		_putchar(str[i]);
