@@ -8,6 +8,7 @@
  */
 
 int print_octal(va_list args)
+{
 int count = 0, octal[32];
 
 unsigned int number = va_arg(args, unsigned int);
@@ -31,7 +32,7 @@ if (octal[j] || e_nonzerobit)
 	count++;
 	}
 }
-if (count ==0)
+if (count == 0)
 {
 	_putchar('0');
 	count++;
