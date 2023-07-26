@@ -13,10 +13,17 @@ int print_int(va_list args)
 
 	n = va_arg(args, int);
 
-	if (n < 0)
+	if (n == INT_MIN)
 	{
 		count += _putchar('-');
-		number = n * -1;
+		number = -(n + 1);
+		number = -(number + 1);
+	}
+
+	else if (n < 0)
+	{
+		count += _putchar('-');
+		number = -n;
 	}
 	else
 		number = n;

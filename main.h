@@ -3,6 +3,7 @@
 
 #include <stdarg.h>
 #include <stdlib.h>
+#include <limits.h>
 
 /**
  * struct functions - Struct functions
