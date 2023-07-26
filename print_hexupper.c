@@ -16,9 +16,15 @@ int print_hexupper(va_list args)
 
 	char hex_d[] = "0123456789ABCDEF";
 
-	unsigned int n = va_arg(args, unsigned int);
+	unsigned int number, n = va_arg(args, unsigned int);
 
-	unsigned int number = n;
+	if (n == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
+
+	number = n;
 
 	while (number != 0)
 	{
@@ -37,15 +43,11 @@ int print_hexupper(va_list args)
 		hex[i] = hex_d[d];
 		n >>= 4;
 	}
-
 	hex[num_d] = '\0';
-
 	for (j = 0; j < num_d; j++)
 	{
 		_putchar(hex[j]);
 	}
-
 	free(hex);
-
 	return (num_d);
 }
