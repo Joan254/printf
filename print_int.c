@@ -23,10 +23,10 @@ int print_int(va_list args)
 	else
 		number = n;
 
-	if (n == INT_MIN)
+	if (n <= INT_MIN)
 	{
-		n = 147483648;
-		count++;
+		number = -(n + 1);
+		number = -(number + 1);
 	}
 
 	while (number / digits > 9)
