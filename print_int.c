@@ -9,7 +9,9 @@
 
 int print_int(va_list args)
 {
-	int n, number, count = 0, digits = 1;
+	int n, count = 0, digits = 1;
+
+	unsigned int number;
 
 	n = va_arg(args, int);
 
@@ -20,6 +22,9 @@ int print_int(va_list args)
 	}
 	else
 		number = n;
+
+	if (n == INT_MIN)
+		number++;
 
 	while (number / digits > 9)
 	{
