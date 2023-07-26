@@ -18,13 +18,16 @@ int print_int(va_list args)
 	if (n < 0)
 	{
 		count += _putchar('-');
-		number = -n;
+		number = n * -1;
 	}
 	else
 		number = n;
 
 	if (n == INT_MIN)
-		number++;
+	{
+		n = 147483648;
+		count++;
+	}
 
 	while (number / digits > 9)
 	{
